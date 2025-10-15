@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Janala</title>
 </head>
 
@@ -12,44 +12,104 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 <!-- font awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
 <!-- font  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
 <!-- stylesheet -->
-<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/style.css" />
 
 <body>
-
-    <header class="bg-[#BADEFF20] border-b-2 border-b-gray-300">
-        <nav class="w-11/12 mx-auto mt-2 py-3">
-            <div class="flex items-center justify-between">
+    <header class=" ">
+        <nav class="bg-[#BADEFF20] border-b-2 border-b-gray-300 mt-2 py-3">
+            <div class="flex items-center justify-between w-11/12 mx-auto">
                 <div class="flex items-center">
                     <div>English</div>
-                    <img src="./assets/logo.png" alt="">
+                    <img src="./assets/logo.png" alt="" />
                     <div>জানালা</div>
                 </div>
 
                 <div>
-                    <button class="btn btn-outline btn-accent"><i class="fa-solid fa-question"></i>FAQ</button>
-                    <button class="btn btn-outline btn-accent"><i class="fa-solid fa-book-open"></i>Learn</button>
-                    <button class="btn btn-outline btn-accent"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</button>
+                    <button class="btn btn-outline btn-accent">
+                        <i class="fa-solid fa-question"></i>FAQ
+                    </button>
+                    <button class="btn btn-outline btn-accent">
+                        <i class="fa-solid fa-book-open"></i>Learn
+                    </button>
+                    <button class="btn btn-outline btn-accent">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out
+                    </button>
                 </div>
             </div>
-
         </nav>
-        <section>
 
+        <section class="w-11/12 mx-auto mt-5">
+            <div class="flex items-center justify-center">
+                <div>
+                    <h1 class="text-2xl font-bold">
+                        <span class="font-bold text-blue-600 text-2xl">English</span> is
+                        Easy
+                    </h1>
+                    <p class="mt-3">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+                        আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+                        যাবে অন্য একটি Level এ .
+                    </p>
+
+                    <div class="flex flex-col gap-3 mt-3">
+                        <!-- User name -->
+                        <label class="input validator">
+                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                    stroke="currentColor">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </g>
+                            </svg>
+                            <input type="text" required placeholder="Username" pattern="[A-Za-z][A-Za-z0-9\-]*"
+                                minlength="3" maxlength="30" title="Only letters, numbers or dash" />
+                        </label>
+                        <!-- password -->
+                        <label class="input validator">
+                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                    stroke="currentColor">
+                                    <path
+                                        d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z">
+                                    </path>
+                                    <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                </g>
+                            </svg>
+                            <input type="password" required placeholder="Password" minlength="8"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must be more than 8 characters, including number, lowercase letter, uppercase letter" />
+                        </label>
+                    </div>
+                    <button class="btn btn-info mt-3">Get Started</button>
+                </div>
+                <div>
+                    <img src="./assets/hero-student.png" alt="" />
+                </div>
+            </div>
         </section>
-
-
     </header>
 
+    <main class="w-11/12 mx-auto mb-10 ">
+        <h1 class="font-bold text-2xl text-center mb-8"><span class="font-bold text-blue-600 text-2xl">Let's</span>
+            Learn Vocabularies
+        </h1>
+
+        <section>
+            <div id="level-container" class="flex gap-3 justify-center">
+
+            </div>
+        </section>
+    </main>
 
     <script src="./scripts/index.js"></script>
 </body>
